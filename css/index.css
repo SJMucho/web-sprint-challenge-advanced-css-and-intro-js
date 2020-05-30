@@ -167,8 +167,8 @@ button:hover{
         flex-direction: column;
         /* align-items: center; */
         /* margin: 0px auto; */
-        align-items: center;
-        justify-content: space-between;
+        /* align-items: center; */
+        /* justify-content: space-between; */
     }
 
     .name {
@@ -177,15 +177,23 @@ button:hover{
 
     .bio {
         margin: 0px auto;
-        padding: 10px 0px 10px 0px;
+        /* padding: 10px 0px; */
         font-size: 1.4rem;
+        /* width: 100%; */
+        
     }
  
        .artist { 
-
+        display: flex;
+        flex-direction: column;
         width: 100%;
         margin: 0px auto;
         width: 100%;
-        padding-top: 10px; */
-    
+        padding-top: 10px; 
+    }
+        /* .paintings {
+
+        border-radius: 2rem;
+        } */
+   
 }
