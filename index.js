@@ -234,18 +234,39 @@ console.log(artists[9]);
 
 // console.log(getArtistByIndex(1,2));
 
+// function getArtistByIndex(arr, index) {
+//   const artIndex = arr[arr.length-1]
+//   return `This artist at index ${artIndex.id} is ${artIndex.name}`
+// }
+
+// console.log(getArtistByIndex(0, 2));
+
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(data) {
-for (let i = 0; i < years.length; i++) {
-  if (years [i] >= 1900) {
-    get20s.push (years[i]);
-  }
+function get20s(arr) {
+  const year = []
+  for (let i = 0; i < arr.length; i++) { 
+     const birthYear = arr[i].years;
+     year.push(years)
+}
+    return year;
 }
 
-console.log(get20s["years"]);
+console.log(get20s(year));
+
+// function getModelYears(arr) {
+//   const years = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     const carYear = arr[i].car_year;
+//     years.push(carYear)
+//   }
+//   return years;
+// }
+
+
+// console.log(getModelYears(inventory));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -278,31 +299,18 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-// function addArtist() {
-//    artists.push (
-//      "id": 21,
-//      "name": "Sarah Mucho",
-//      "years": "1980-2020",
-//      "genre": "Web Design",
-//      "nationality": "American",
-//      "bio": "Born in PA. Lives in Brooklyn, NY."`
-//     ) 
-//   }
+function addArtist(Sarah) {
+   artists.push 
+     "id": 21,
+     "name": "Sarah Mucho",
+     "years": "1980-2020",
+     "genre": "Web Design",
+     "nationality": "American",
+     "bio": "Born in PA. Lives in Brooklyn, NY."
+}
 
-// artists.push ()
-//   {
-//   "id": 21, 
-//   "name": "Sarah Mucho", 
-//   "years": "1980-2020", 
-//   "genre": "Web Design", 
-//   "nationality": "American", 
-//   "bio": "From Brooklyn, NY.";
-//   }
+console.log(artist);
 
-// console.log(artists);
-
-
-//  console.log(addArtist);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
