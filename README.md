@@ -32,7 +32,7 @@ Mixins are my favorite concept. I’d say I have the most trouble with inheritan
 
 3. How would you explain the concept of a variable to someone new to programming?
 
-A variable is a stored value that can be changed or manipulated through information or “instruction” passed to a program.
+A variable is a stored value that can be changed or manipulated through information or “instruction” passed into a program.
 
 4. What is the purpose of using functions in code?
 
@@ -40,7 +40,7 @@ A function organizes multiple instructions into a single code that would otherwi
 
 5. What is JSON data?
 
--JSON is a data consisting of primitive value types: variables, strings, numbers booleans, undefined and null.
+-JSON is a data consisting of primitive value types: strings, numbers, booleans. Could also include null and undefined.
 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
