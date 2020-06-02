@@ -228,42 +228,27 @@ console.log(artists[9]);
 // */
 // 
 
-// function getArtistByIndex(arr, index) {
-//  return `This artist at index ${artists.id} is ${artists.name}`
-//  }
+function getArtistByIndex(id, name) {
+  return `This artist at index ${id} is ${artists[id].name}`
+  }
 
-// console.log(getArtistByIndex(1,2));
-
-// function getArtistByIndex(arr, index) {
-//   const artIndex = arr[arr.length-1]
-//   return `This artist at index ${artIndex.id} is ${artIndex.name}`
-// }
-
-// console.log(getArtistByIndex(0, 2));
+console.log(getArtistByIndex(2,3));
 
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(arr) {
-  const year = []
-  for (let i = 0; i < arr.length; i++) { 
-     const birthYear = arr[i].years;
-     year.push(years)
-}
-    return year;
-}
+// function get20s(arr) {
+//    const year = []
+//    for (let i = 0; i < arr.length; i++) { 
+//      const birthYear = arr[i].years;
+//      year.push(years)
+//  }
+//      return year;
+//  }
 
-console.log(get20s(year));
+//  console.log(get20s(year));
 
-// function getModelYears(arr) {
-//   const years = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     const carYear = arr[i].car_year;
-//     years.push(carYear)
-//   }
-//   return years;
-// }
 
 
 // console.log(getModelYears(inventory));
@@ -299,8 +284,9 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(Sarah) {
-   artists.push 
+ function addArtist(Sarah) { 
+   const newArtist = {
+    
      "id": 21,
      "name": "Sarah Mucho",
      "years": "1980-2020",
@@ -308,8 +294,10 @@ function addArtist(Sarah) {
      "nationality": "American",
      "bio": "Born in PA. Lives in Brooklyn, NY."
 }
-
-console.log(artist);
+   Sarah.push(newArtist); 
+}
+addArtist(artists);
+console.log(artists[artists.length-1]);
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
