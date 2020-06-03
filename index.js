@@ -215,7 +215,6 @@ console.log(artists[2]["bio"]);
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[9]["name"] = "Vincent Van Gough";
-
 console.log(artists[9]);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -232,26 +231,20 @@ function getArtistByIndex(id, name) {
   return `This artist at index ${id} is ${artists[id].name}`
   }
 
-console.log(getArtistByIndex(2,3));
-
+  console.log(getArtistByIndex(2,3));
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-// function get20s(arr) {
-//    const year = []
-//    for (let i = 0; i < arr.length; i++) { 
+function get20s(arr) {
+//   const year = []
+//   for (let i = 0; i < arr.length; i++) { 
 //      const birthYear = arr[i].years;
 //      year.push(years)
-//  }
-//      return year;
-//  }
+}
+//     return year;
 
-//  console.log(get20s(year));
-
-
-
-// console.log(getModelYears(inventory));
+    // console.log(get20s("years"));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -284,21 +277,25 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
- function addArtist(Sarah) { 
-   const newArtist = {
-    
-     "id": 21,
-     "name": "Sarah Mucho",
-     "years": "1980-2020",
-     "genre": "Web Design",
-     "nationality": "American",
-     "bio": "Born in PA. Lives in Brooklyn, NY."
-}
-   Sarah.push(newArtist); 
-}
-addArtist(artists);
-console.log(artists[artists.length-1]);
 
+// function addArtist(Sarah) {
+//   artists.push 
+// function addArtist(Sarah) { 
+//   const newArtist = {
+
+  function addArtist(Sarah) { 
+    const newArtist = {
+    "id": 21,
+    "name": "Sarah Mucho",
+    "years": "1980-2020",
+    "genre": "Web Design",
+    "nationality": "American",
+    "bio": "Born in PA. Lives in Brooklyn, NY."
+}   
+    Sarah.push(newArtist); 
+  }
+  addArtist(artists);
+  console.log(artists[artists.length-1]);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -307,34 +304,6 @@ console.log(artists[artists.length-1]);
 and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
-
-
-// const lotsOfArt = paintings.filter(paintings => paintings => 100);
-
-// console.log(lotsOfArt);
-
-// function lotsOfArt (index) {
-//   let art = [];
-//   for (let i = 0; i < paintings.length; i++) {
-//     if (paintings [i] > 100) {
-//       art.push (paintings [i]);
-//     }
-//   }
-// }
-
-// console.log(art);
-// (index){
-//   if ("paintings" > 100) {
-//   return: "name";
-// } 
-// }
-// lotsOfArt();
-
-// function makePersonObject(name) {
-//   if ("paintings" > 100) 
-//   console.log(artists.name);
-// }
-// lotsOfArt();
 
 
 
