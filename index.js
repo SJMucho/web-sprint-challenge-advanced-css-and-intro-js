@@ -236,15 +236,16 @@ function getArtistByIndex(id, name) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(arr) {
+// function get20s(arr) {
 //   const year = []
 //   for (let i = 0; i < arr.length; i++) { 
 //      const birthYear = arr[i].years;
 //      year.push(years)
-}
+// }
 //     return year;
 
-    // console.log(get20s("years"));
+// }
+//     console.log(get20s(years));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -256,7 +257,7 @@ function get20s(arr) {
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(array, id) {
+function removeArtist(arr, id) {
     /* code here */
   }
   
@@ -276,12 +277,6 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should console.log() the new array with information added"*/
-
-
-// function addArtist(Sarah) {
-//   artists.push 
-// function addArtist(Sarah) { 
-//   const newArtist = {
 
   function addArtist(Sarah) { 
     const newArtist = {
