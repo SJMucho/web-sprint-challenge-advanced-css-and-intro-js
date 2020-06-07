@@ -241,7 +241,7 @@ function get20s(arr) {
   for (let i = 0; i < arr.length; i++) { 
      const birthYear = arr[i].years;
      arr.push(years)
-   if (arr[i].name > 1900)
+   if (arr[i].name >= 1900)
   
     return get20s;
   }
@@ -260,7 +260,7 @@ function get20s(arr) {
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(arr, id) {
-    const removeArtist = [];
+    const removeArtist = [i === 100];
     for (let i = 0; i < arr.length; i++) {
   }
     removeArtist.pop 
