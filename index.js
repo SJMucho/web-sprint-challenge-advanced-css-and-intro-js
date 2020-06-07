@@ -237,15 +237,17 @@ function getArtistByIndex(id, name) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 function get20s(arr) {
-  const year = []
+  get20s = [];
   for (let i = 0; i < arr.length; i++) { 
      const birthYear = arr[i].years;
-     year.push(years)
+     arr.push(years)
+   if (arr[i].name > 1900)
+  
+    return get20s;
+  }
 }
-    return year;
-
-}
-    console.log(get20s["years"]);
+    // console.log(get20s[years]);
+    console.log(get20s.years);
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -258,10 +260,12 @@ function get20s(arr) {
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(arr, id) {
-    /* code here */
+    const removeArtist = [];
+    for (let i = 0; i < arr.length; i++) {
   }
-  
-  /**
+    removeArtist.pop 
+}
+  console.log(removeArtist(artists, 9));
 
 
 
@@ -300,16 +304,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(arr) {
-  const artWork = [i === 100]
-  for (let i = 0; i < arr.length; i++) { 
-     const birthYear = arr[i].paintings;
-     artWork.push(paintings)
-}
-    return paintings;
+  function lotsOfArt(arr) {
+    lotsOfArt = [i === 100]
+    for (let i = 0; i < arr.length; i++) { 
+    const birthYear = arr[i].paintings;
+     paintings.push([i].paintings);
+ }
+    return artists;
 
-}
-    console.log(lotsOfArt(paintings));
+ }
+    console.log(lotsOfArt(artists));
 
 
 
