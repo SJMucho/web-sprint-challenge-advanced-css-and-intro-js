@@ -236,18 +236,21 @@ function getArtistByIndex(id, name) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
+
 function get20s(arr) {
-  get20s = [];
-  for (let i = 0; i < arr.length; i++) { 
-     const birthYear = arr[i].years;
-     arr.push(years)
-   if (arr[i].name >= 1900)
-  
-    return get20s;
+  const names = [];
+  for (let i = 0; i < arr.length; i++){
+    year = parseInt(arr[i].years);
+    if (year > 1900) {
+    names.push(arr[i].name)
+    }
   }
+  return names;
 }
-    // console.log(get20s[years]);
-    console.log(get20s.years);
+console.log(get20s(artists));
+
+ 
+
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -259,14 +262,24 @@ function get20s(arr) {
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(arr, id) {
-    const removeArtist = [i === 100];
-    for (let i = 0; i < arr.length; i++) {
-  }
-    removeArtist.pop 
-}
-  console.log(removeArtist(artists, 9));
+// function removeArtist(arr, id) {
+//     const lessArtists = [];
+//     for (let i = 20; i >= arr.length; i--) {
+  
+//     artists.pop(lessArtists);} //
+// }
 
+// console.log(removeArtist(lessArtists, 9));
+//   console.log(removeArtist(artists.length-1[9]));
+
+function removeArtist(arr, id) {
+  arr.splice(id, 1); 
+  return arr.length;     
+}
+
+console.log(removeArtist(artists, 0));
+console.log(removeArtist(artists, 1));
+console.log(removeArtist(artists, 2));
 
 
 
@@ -305,15 +318,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
   function lotsOfArt(arr) {
-    lotsOfArt = [i === 100]
+    const names = []
     for (let i = 0; i < arr.length; i++) { 
-    const birthYear = arr[i].paintings;
-     paintings.push([i].paintings);
- }
-    return artists;
-
- }
-    console.log(lotsOfArt(artists));
+    if (arr[i].paintings > 100) {
+      names.push(arr[i].name);
+    }
+  }
+    return names
+}
+    
+ console.log(lotsOfArt(artists));
 
 
 
